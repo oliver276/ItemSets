@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ItemSets">
+    <output-path>$PROJECT_DIR$/../Java_out/ItemSets/</output-path>
+    <root id="archive" name="ItemSets.jar">
+      <element id="module-output" name="ItemSets" />
+      <element id="library" level="project" name="gson-2.6.2" />
+    </root>
+  </artifact>
+</component>

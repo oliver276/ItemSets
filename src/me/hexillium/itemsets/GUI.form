@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="me.hexillium.itemsets.GUI">
+  <grid id="27dc6" binding="panel1" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="1193" height="847"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="54ab">
+        <constraints>
+          <grid row="0" column="0" row-span="26" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="5.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="438f9" class="javax.swing.JTree" binding="tree1" custom-create="true" default-binding="true">
+            <constraints/>
+            <properties/>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="45780">
+        <constraints>
+          <grid row="1" column="6" row-span="25" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="3.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c1959" class="javax.swing.JTree" binding="tree2" custom-create="true" default-binding="true">
+            <constraints/>
+            <properties/>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="5b0b9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Create new itemset with specified name into a champion"/>
+        </properties>
+      </component>
+      <component id="c9b32" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Add selected item to itemblock"/>
+        </properties>
+      </component>
+      <component id="eea4c" class="javax.swing.JTextField" binding="SelectedItem">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="3ecfe" class="javax.swing.JButton" binding="AddItemButton">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Add Item"/>
+        </properties>
+      </component>
+      <component id="cdbaf" class="javax.swing.JButton" binding="CreateNewItemset">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Create"/>
+        </properties>
+      </component>
+      <component id="174db" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Remove selected item from itemblock"/>
+        </properties>
+      </component>
+      <component id="9f54a" class="javax.swing.JTextField" binding="newItemSetName">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="36e92" class="javax.swing.JTextField" binding="ItemSetItemText">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="366d9" class="javax.swing.JButton" binding="removeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Remove"/>
+        </properties>
+      </component>
+      <component id="93a76" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Move selected Item up or down"/>
+        </properties>
+      </component>
+      <component id="ed17f" class="javax.swing.JButton" binding="upButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Up"/>
+        </properties>
+      </component>
+      <component id="3c24f" class="javax.swing.JButton" binding="downButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Down"/>
+        </properties>
+      </component>
+      <component id="32fc5" class="javax.swing.JTextField" binding="ItemMovementText">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="10.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="be571" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Move the selected Item Block up or down"/>
+        </properties>
+      </component>
+      <component id="3bdd9" class="javax.swing.JTextField" binding="selectedItemBlockText2">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="8f3ff" class="javax.swing.JButton" binding="ItemBlockMoveUp">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Up"/>
+        </properties>
+      </component>
+      <component id="b3d0" class="javax.swing.JButton" binding="ItemBlockMoveDown">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Down"/>
+        </properties>
+      </component>
+      <component id="4ec62" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Create an Item block with the speficied name in a set"/>
+        </properties>
+      </component>
+      <component id="a8691" class="javax.swing.JButton" binding="createButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Create"/>
+        </properties>
+      </component>
+      <component id="d4a0b" class="javax.swing.JTextField" binding="NewItemBlockField">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="26582" class="javax.swing.JCheckBox" binding="bootsCheckBox" default-binding="true">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Boots"/>
+        </properties>
+      </component>
+      <component id="72313" class="javax.swing.JCheckBox" binding="spellDamageCheckBox" default-binding="true">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Spell Damage"/>
+        </properties>
+      </component>
+      <component id="fdc10" class="javax.swing.JCheckBox" binding="laneCheckBox" default-binding="true">
+        <constraints>
+          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Lane"/>
+        </properties>
+      </component>
+      <component id="d566a" class="javax.swing.JCheckBox" binding="manaRegenCheckBox" default-binding="true">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Mana Regen"/>
+        </properties>
+      </component>
+      <component id="830fe" class="javax.swing.JCheckBox" binding="manaCheckBox1" default-binding="true">
+        <constraints>
+          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Mana"/>
+        </properties>
+      </component>
+      <component id="be041" class="javax.swing.JCheckBox" binding="jungleCheckBox" default-binding="true">
+        <constraints>
+          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Jungle"/>
+        </properties>
+      </component>
+      <component id="8024f" class="javax.swing.JCheckBox" binding="criticalStrikeCheckBox" default-binding="true">
+        <constraints>
+          <grid row="17" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Critical Strike"/>
+        </properties>
+      </component>
+      <component id="84291" class="javax.swing.JCheckBox" binding="damageCheckBox" default-binding="true">
+        <constraints>
+          <grid row="18" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Damage"/>
+        </properties>
+      </component>
+      <component id="43112" class="javax.swing.JCheckBox" binding="attackSpeedCheckBox" default-binding="true">
+        <constraints>
+          <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Attack Speed"/>
+        </properties>
+      </component>
+      <component id="25d9d" class="javax.swing.JCheckBox" binding="consumableCheckBox" default-binding="true">
+        <constraints>
+          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Consumable"/>
+        </properties>
+      </component>
+      <component id="8ce5f" class="javax.swing.JCheckBox" binding="onHitCheckBox" default-binding="true">
+        <constraints>
+          <grid row="19" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="On Hit"/>
+        </properties>
+      </component>
+      <component id="1e264" class="javax.swing.JCheckBox" binding="healthCheckBox1" default-binding="true">
+        <constraints>
+          <grid row="17" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Health"/>
+        </properties>
+      </component>
+      <component id="71263" class="javax.swing.JCheckBox" binding="magicResistanceCheckBox1" default-binding="true">
+        <constraints>
+          <grid row="18" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Magic Resistance"/>
+        </properties>
+      </component>
+      <component id="44329" class="javax.swing.JCheckBox" binding="stealthCheckBox" default-binding="true">
+        <constraints>
+          <grid row="20" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Stealth"/>
+        </properties>
+      </component>
+      <component id="c74a5" class="javax.swing.JCheckBox" binding="activeCheckBox" default-binding="true">
+        <constraints>
+          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Active"/>
+        </properties>
+      </component>
+      <component id="8c579" class="javax.swing.JCheckBox" binding="nonBootsMovementCheckBox" default-binding="true">
+        <constraints>
+          <grid row="20" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Non-boots movement"/>
+        </properties>
+      </component>
+      <component id="60940" class="javax.swing.JCheckBox" binding="tenacityCheckBox" default-binding="true">
+        <constraints>
+          <grid row="21" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Tenacity"/>
+        </properties>
+      </component>
+      <component id="a1caf" class="javax.swing.JCheckBox" binding="spellVampCheckBox" default-binding="true">
+        <constraints>
+          <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="SpellVamp"/>
+        </properties>
+      </component>
+      <component id="838fd" class="javax.swing.JCheckBox" binding="goldRegenerationCheckBox" default-binding="true">
+        <constraints>
+          <grid row="21" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Gold Regeneration"/>
+        </properties>
+      </component>
+      <component id="c6d3e" class="javax.swing.JCheckBox" binding="auraCheckBox" default-binding="true">
+        <constraints>
+          <grid row="21" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Aura"/>
+        </properties>
+      </component>
+      <component id="8d169" class="javax.swing.JCheckBox" binding="healthRegenCheckBox" default-binding="true">
+        <constraints>
+          <grid row="17" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Health Regen"/>
+        </properties>
+      </component>
+      <component id="2a59f" class="javax.swing.JCheckBox" binding="armourCheckBox1" default-binding="true">
+        <constraints>
+          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Armour"/>
+        </properties>
+      </component>
+      <component id="4ba85" class="javax.swing.JCheckBox" binding="lifestealCheckBox" default-binding="true">
+        <constraints>
+          <grid row="19" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Lifesteal"/>
+        </properties>
+      </component>
+      <component id="a0d1b" class="javax.swing.JCheckBox" binding="visionCheckBox" default-binding="true">
+        <constraints>
+          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Vision"/>
+        </properties>
+      </component>
+      <component id="e0249" class="javax.swing.JCheckBox" binding="cooldownReductionCheckBox" default-binding="true">
+        <constraints>
+          <grid row="21" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Cooldown Reduction"/>
+        </properties>
+      </component>
+      <component id="3512f" class="javax.swing.JCheckBox" binding="magicPenetrationCheckBox" default-binding="true">
+        <constraints>
+          <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Magic Penetration"/>
+        </properties>
+      </component>
+      <component id="812ed" class="javax.swing.JCheckBox" binding="slowCheckBox" default-binding="true">
+        <constraints>
+          <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Slow"/>
+        </properties>
+      </component>
+      <component id="60e30" class="javax.swing.JCheckBox" binding="armourPenetrationCheckBox" default-binding="true">
+        <constraints>
+          <grid row="22" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Armour Penetration"/>
+        </properties>
+      </component>
+      <component id="cd938" class="javax.swing.JCheckBox" binding="trinketCheckBox" default-binding="true">
+        <constraints>
+          <grid row="22" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Trinket"/>
+        </properties>
+      </component>
+      <component id="5879d" class="javax.swing.JCheckBox" binding="bilgewaterCheckBox" default-binding="true">
+        <constraints>
+          <grid row="22" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Bilgewater"/>
+        </properties>
+      </component>
+      <component id="8de53" class="javax.swing.JTextField" binding="selectedItemBlockText">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="51a0a" class="javax.swing.JTextField" binding="selectedItemPageText">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="852c4" class="javax.swing.JTextField" binding="selectedChampionText">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="13efc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Delete selected Item block"/>
+        </properties>
+      </component>
+      <component id="e313b" class="javax.swing.JTextField" binding="selectedItemBlock2">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="a7512" class="javax.swing.JButton" binding="DeleteItemBlockButton">
+        <constraints>
+          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Delete"/>
+        </properties>
+      </component>
+      <component id="fd6e" class="javax.swing.JTextField" binding="selectedItemSet2">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="37254" class="javax.swing.JButton" binding="deleteItemsetButton" default-binding="true">
+        <constraints>
+          <grid row="15" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Delete Itemset"/>
+        </properties>
+      </component>
+      <component id="9292f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Delete selected itemset     !Warning"/>
+        </properties>
+      </component>
+      <component id="59bc7" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+        <constraints>
+          <grid row="25" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Save"/>
+        </properties>
+      </component>
+      <component id="8694d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Filter Items"/>
+        </properties>
+      </component>
+      <component id="1a497" class="javax.swing.JTextField" binding="itemSearchBox">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="28b0f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Search for an item:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

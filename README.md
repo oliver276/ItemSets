@@ -1,7 +1,7 @@
 # ItemSets
 A client for modifying and creating itemsets for League of Legends
 
-You can download the JAR or the EXE.
+You can download the JAR or the EXE. https://github.com/oliver276/ItemSets/releases
 
 To change the directory that the program looks into, start with a commandline of your install directory for League of Legends
 
